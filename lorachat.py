@@ -2,6 +2,12 @@
 #-*- coding: utf8 -*-
 
 import lora
+import lora.spi
+import spidev
 
-l = lora.Lora()
+spi = lora.spi.SpiDevDriver()
+spi.open()
 
+l = lora.Lora(spi)
+
+print "LoRa chip silicon version: 0x%x" % l.read_version()
