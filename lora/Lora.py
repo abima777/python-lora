@@ -1,5 +1,9 @@
 #-*- coding: utf8 -*-
 
+# Docs:
+# http://www.hoperf.com/upload/rf/RFM95_96_97_98W.pdf
+# http://www.semtech.com/images/datasheet/sx1276.pdf
+
 class Lora:
     RegFifo = 0x00 # FIFO read/write access
     RegOpMode = 0x01 # Operating mode &  LoRa TM / FSK selection
